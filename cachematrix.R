@@ -1,6 +1,6 @@
-## function makeCacheMatrix creates a cacheable matrix, 
-## with capacity to store the inverse of the matrix, once 
-## it has been calculated, for reuse
+## function makeCacheMatrix creates a special matrix, 
+## which stores the inverse of the matrix, when it is 
+## first calculated, for reuse. 
 makeCacheMatrix <- function(x = matrix()) {
     inv_x <- NULL
     set <- function(y) {
